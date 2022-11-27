@@ -1,3 +1,6 @@
+You are given a Singly Linked List of integers. Modify the linked list by removing the nodes from the list that have a greater valued node on their adjacent left in the given linked list
+si 10 14 6 80 55 56 77 -1
+so 10 14 80 56 77 -1
 public static Node getListAfterDeleteOperation(Node head){
         if(head==null){
             return null;
