@@ -1,0 +1,19 @@
+public static Node getListAfterDeleteOperation(Node head){
+        if(head==null){
+            return null;
+        }
+        Node prev=head;
+        int leftValue =prev.data;
+        while(prev.next!=null){
+            if(leftValue>prev.next.data){
+                leftValue=prev.next.data;
+                prev.next=prev.next.next;
+            }
+            else{
+                leftValue=prev.next.data;
+                prev=prev.next;
+            }
+        }
+        return head;
+    }
+}
